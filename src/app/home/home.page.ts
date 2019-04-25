@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import {SobrePage} from '../sobre/sobre.page';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  sobrePage = SobrePage;
+
+  constructor(public navCtrl: NavController) {
+
+  }
 
 }
